@@ -1,0 +1,14 @@
+* {
+    font-family: consolas, monospace;
+}
+button {
+    cursor: pointer;
+    height: 23px
+}
+hr {
+    color:rgba(255, 255, 255, 0.692);
+}
+pre {
+    color:rgb(20, 20, 191);
+    font-size: small;
+}
