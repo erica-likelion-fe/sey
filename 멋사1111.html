@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멋쟁이 사자처럼 회원가입</title>
+    <link rel="stylesheet" href="style.css">
+    <h1 style="border: 1px solid black;"></h1>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <h3>회원정보입력</h3>
+    <hr color="gray">
+    <form action="/submit" method="POST">
+        <label for="username">아이디</label> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="username" id="username" placeholder="아이디 입력">
+        <button>중복확인</button>
+        <hr>
+        <label for="password">비밀번호</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="password" name="password" id="password" placeholder="비밀번호 입력">
+        <hr>
+        <label for="">비밀번호확인</label> &nbsp; &nbsp; &nbsp;
+        <input type="password" name="password" id="pwd" placeholder="비밀번호 입력">
+        <hr>
+        <label for="">역할</label> &nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <select name="rol" id="rol">
+            <option value=""selected disabled>선택하세요</option>
+            <option value="frontend">프론트엔드</option>
+            <option value="backend">백엔드</option>
+            <option value="design">디자인</option>
+        </select> <hr>
+        <label for="">성별</label> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="checkbox">남성  
+        <input type="checkbox">여성
+        <hr>
+        <label for="">우편번호</label> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <input type="text">
+        <button>우편번호찾기</button>
+
+    
+        <hr>
+        <p>주소 &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" name="z" id="z">
+         </p>
+        <hr>
+        <label for="">E-mail</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" name="email" id="email" placeholder="이메일 입력">
+        @
+        <select>
+            <option value="">사용자입력</option>
+            <option value="">naver.com</option>
+            <option value="">gogle.com</option>
+            <option value="">daum.net</option>
+        </select>
+        <button>중복확인</button> <br>
+        <pre>
+                     이메일 수신여부 <input type="checkbox">수신 <input type="checkbox">수신거부
+        </pre> 
+        <hr>
+        <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button>취소</button>&nbsp; <button>회원가입</button>
+    </form>
+</body>
+</html>
